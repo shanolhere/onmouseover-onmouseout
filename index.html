@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div
+      id="circle"
+      class="circle"
+      onmouseover="bigCircle(this)"
+      onmouseout="smallCircle(this)"
+    >
+      Hover
+    </div>
+
+    <script>
+      function bigCircle(circle) {
+        circle.style.width = "250px";
+        circle.style.height = "250px";
+      }
+      function smallCircle(circle) {
+        circle.style.width = "120px";
+        circle.style.height = "120px";
+      }
+    </script>
+  </body>
+</html>
